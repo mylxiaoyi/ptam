@@ -1,0 +1,780 @@
+ARDriver	ARDriver.h	25
+ARDriver::ARDriver	ARDriver.cc	/^ARDriver::ARDriver(const ATANCamera &cam, ImageRef/
+ARDriver::DrawDistortedFB	ARDriver.cc	/^void ARDriver::DrawDistortedFB()$/
+ARDriver::DrawFBBackGround	ARDriver.cc	/^void ARDriver::DrawFBBackGround()$/
+ARDriver::DrawFadingGrid	ARDriver.cc	/^void ARDriver::DrawFadingGrid()$/
+ARDriver::Init	ARDriver.cc	/^void ARDriver::Init()$/
+ARDriver::MakeFrameBuffer	ARDriver.cc	/^void ARDriver::MakeFrameBuffer()$/
+ARDriver::Render	ARDriver.cc	/^void ARDriver::Render(Image<Rgb<byte> > &imFrame, /
+ARDriver::Reset	ARDriver.cc	/^void ARDriver::Reset()$/
+ARDriver::mCamera	ARDriver.h	33
+ARDriver::mGLWindow	ARDriver.h	34
+ARDriver::mGame	ARDriver.h	53
+ARDriver::mbInitialised	ARDriver.h	50
+ARDriver::mirFBSize	ARDriver.h	47
+ARDriver::mirFrameSize	ARDriver.h	48
+ARDriver::mnCounter	ARDriver.h	46
+ARDriver::mnFrameBuffer	ARDriver.h	42
+ARDriver::mnFrameBufferTex	ARDriver.h	43
+ARDriver::mnFrameTex	ARDriver.h	44
+ARDriver::mse3	ARDriver.h	49
+ATANCamera	ATANCamera.h	66
+ATANCamera::ATANCamera	ATANCamera.cc	/^ATANCamera::ATANCamera(string sName)$/
+ATANCamera::DisableRadialDistortion	ATANCamera.cc	/^void ATANCamera::DisableRadialDistortion()$/
+ATANCamera::GetCameraParameterDerivs	ATANCamera.cc	/^Matrix<2,NUMTRACKERCAMPARAMETERS> ATANCamera::GetC/
+ATANCamera::GetImageSize	ATANCamera.h	/^    inline Vector<2> GetImageSize() {return mvImag/
+ATANCamera::GetProjectionDerivs	ATANCamera.cc	/^Matrix<2,2> ATANCamera::GetProjectionDerivs()$/
+ATANCamera::Invalid	ATANCamera.h	/^    inline bool Invalid() {  return mbInvalid;}$/
+ATANCamera::LargestRadiusInImage	ATANCamera.h	/^    inline double LargestRadiusInImage() {  return/
+ATANCamera::MakeUFBLinearFrustumMatrix	ATANCamera.cc	/^Matrix<4> ATANCamera::MakeUFBLinearFrustumMatrix(d/
+ATANCamera::Matrix	ATANCamera.h	87
+ATANCamera::Matrix	ATANCamera.h	110
+ATANCamera::OnePixelDist	ATANCamera.h	/^    inline double OnePixelDist() { return mdOnePix/
+ATANCamera::PixelAspectRatio	ATANCamera.h	/^    double PixelAspectRatio() { return mvFocal[1] /
+ATANCamera::Project	ATANCamera.cc	/^Vector<2> ATANCamera::Project(const Vector<2>& vCa/
+ATANCamera::Project	ATANCamera.h	/^    inline Vector<2> Project(CVD::ImageRef ir) { r/
+ATANCamera::RefreshParams	ATANCamera.cc	/^void ATANCamera::RefreshParams() $/
+ATANCamera::SetImageSize	ATANCamera.cc	/^void ATANCamera::SetImageSize(Vector<2> vImageSize/
+ATANCamera::SetImageSize	ATANCamera.h	/^    inline void SetImageSize(CVD::ImageRef irImage/
+ATANCamera::UFBLinearProject	ATANCamera.h	/^inline Vector<2> ATANCamera::UFBLinearProject(cons/
+ATANCamera::UFBLinearUnProject	ATANCamera.h	/^inline Vector<2> ATANCamera::UFBLinearUnProject(co/
+ATANCamera::UFBProject	ATANCamera.cc	/^Vector<2> ATANCamera::UFBProject(const Vector<2>& /
+ATANCamera::UFBUnProject	ATANCamera.cc	/^Vector<2> ATANCamera::UFBUnProject(const Vector<2>/
+ATANCamera::UnProject	ATANCamera.cc	/^Vector<2> ATANCamera::UnProject(const Vector<2>& v/
+ATANCamera::UnProject	ATANCamera.h	/^    inline Vector<2> UnProject(CVD::ImageRef ir)  /
+ATANCamera::UpdateParams	ATANCamera.cc	/^void ATANCamera::UpdateParams(Vector<5> vUpdate)$/
+ATANCamera::invrtrans	ATANCamera.h	/^    inline double invrtrans(double r)$/
+ATANCamera::mbInvalid	ATANCamera.h	121
+ATANCamera::md2Tan	ATANCamera.h	127
+ATANCamera::mdDistortionEnabled	ATANCamera.h	131
+ATANCamera::mdLargestRadius	ATANCamera.h	124
+ATANCamera::mdLastDistR	ATANCamera.h	119
+ATANCamera::mdLastFactor	ATANCamera.h	120
+ATANCamera::mdLastR	ATANCamera.h	118
+ATANCamera::mdMaxR	ATANCamera.h	125
+ATANCamera::mdOneOver2Tan	ATANCamera.h	128
+ATANCamera::mdOnePixelDist	ATANCamera.h	126
+ATANCamera::mdW	ATANCamera.h	129
+ATANCamera::mdWinv	ATANCamera.h	130
+ATANCamera::mgvvCameraParams	ATANCamera.h	108
+ATANCamera::msName	ATANCamera.h	159
+ATANCamera::mvCenter	ATANCamera.h	132
+ATANCamera::mvDefaultParams	ATANCamera.cc	283
+ATANCamera::mvDefaultParams	ATANCamera.h	105
+ATANCamera::mvFocal	ATANCamera.h	133
+ATANCamera::mvImageSize	ATANCamera.h	135
+ATANCamera::mvImplaneBR	ATANCamera.h	140
+ATANCamera::mvImplaneTL	ATANCamera.h	139
+ATANCamera::mvInvFocal	ATANCamera.h	134
+ATANCamera::mvLastCam	ATANCamera.h	115
+ATANCamera::mvLastDistCam	ATANCamera.h	117
+ATANCamera::mvLastIm	ATANCamera.h	116
+ATANCamera::mvUFBLinearCenter	ATANCamera.h	138
+ATANCamera::mvUFBLinearFocal	ATANCamera.h	136
+ATANCamera::mvUFBLinearInvFocal	ATANCamera.h	137
+ATANCamera::rtrans_factor	ATANCamera.h	/^    inline double rtrans_factor(double r)$/
+Bundle	Bundle.h	103
+Bundle::AddCamera	Bundle.cc	/^int Bundle::AddCamera(SE3<> se3CamFromWorld, bool /
+Bundle::AddMeas	Bundle.cc	/^void Bundle::AddMeas(int nCam, int nPoint, Vector</
+Bundle::AddPoint	Bundle.cc	/^int Bundle::AddPoint(Vector<3> v3Pos)$/
+Bundle::Bundle	Bundle.cc	/^Bundle::Bundle(const ATANCamera &TCam)$/
+Bundle::ClearAccumulators	Bundle.cc	/^void Bundle::ClearAccumulators()$/
+Bundle::Compute	Bundle.cc	/^int Bundle::Compute(bool *pbAbortSignal)$/
+Bundle::Converged	Bundle.h	/^    inline bool Converged() { return mbConverged;}/
+Bundle::Do_LM_Step	Bundle.cc	/^bool Bundle::Do_LM_Step(bool *pbAbortSignal)$/
+Bundle::FindNewError	Bundle.cc	/^double Bundle::FindNewError()$/
+Bundle::GenerateMeasLUTs	Bundle.cc	/^void Bundle::GenerateMeasLUTs()$/
+Bundle::GenerateOffDiagScripts	Bundle.cc	/^void Bundle::GenerateOffDiagScripts()$/
+Bundle::GetCamera	Bundle.cc	/^SE3<> Bundle::GetCamera(int n)$/
+Bundle::GetOutlierMeasurements	Bundle.cc	/^vector<pair<int, int> > Bundle::GetOutlierMeasurem/
+Bundle::GetOutliers	Bundle.cc	/^set<int> Bundle::GetOutliers()$/
+Bundle::GetPoint	Bundle.cc	/^Vector<3> Bundle::GetPoint(int n)$/
+Bundle::ModifyLambda_BadStep	Bundle.cc	/^void Bundle::ModifyLambda_BadStep()$/
+Bundle::ModifyLambda_GoodStep	Bundle.cc	/^void Bundle::ModifyLambda_GoodStep()$/
+Bundle::ProjectAndFindSquaredError	Bundle.cc	/^inline void Bundle::ProjectAndFindSquaredError(Mea/
+Bundle::mCamera	Bundle.h	135
+Bundle::mMeasList	Bundle.h	131
+Bundle::mbConverged	Bundle.h	141
+Bundle::mbHitMaxIterations	Bundle.h	142
+Bundle::mdLambda	Bundle.h	139
+Bundle::mdLambdaFactor	Bundle.h	140
+Bundle::mdSigmaSquared	Bundle.h	138
+Bundle::mgvdUpdateConvergenceLimit	Bundle.h	147
+Bundle::mgvnBundleCout	Bundle.h	148
+Bundle::mgvnMaxIterations	Bundle.h	146
+Bundle::mnAccepted	Bundle.h	144
+Bundle::mnCamsToUpdate	Bundle.h	136
+Bundle::mnCounter	Bundle.h	143
+Bundle::mnStartRow	Bundle.h	137
+Bundle::mpbAbortSignal	Bundle.h	150
+Bundle::mvCameras	Bundle.h	130
+Bundle::mvMeasLUTs	Bundle.h	133
+Bundle::mvOutlierMeasurementIdx	Bundle.h	132
+Bundle::mvPoints	Bundle.h	129
+Bundle::std::vector	Bundle.h	115
+Bundle::std::vector	Bundle.h	132
+BundleTriangle_UpdateM3V_LL	Bundle.cc	/^inline void BundleTriangle_UpdateM3V_LL(Matrix<3> /
+BundleTriangle_UpdateM6U_LL	Bundle.cc	/^inline void BundleTriangle_UpdateM6U_LL(Matrix<6> /
+CHECK_RESET	MapMaker.cc	59
+CVD	ARDriver.h	23
+CalcJacobian	TrackerData.h	/^    inline void CalcJacobian()$/
+CalibCornerPatch	CalibCornerPatch.h	11
+CalibCornerPatch::CalibCornerPatch	CalibCornerPatch.cc	/^CalibCornerPatch::CalibCornerPatch(int nSideSize)$/
+CalibCornerPatch::Iterate	CalibCornerPatch.cc	/^double CalibCornerPatch::Iterate(Image<byte> &im)$/
+CalibCornerPatch::IterateOnImage	CalibCornerPatch.cc	/^bool CalibCornerPatch::IterateOnImage(CalibCornerP/
+CalibCornerPatch::IterateOnImageWithDrawing	CalibCornerPatch.cc	/^bool CalibCornerPatch::IterateOnImageWithDrawing(C/
+CalibCornerPatch::MakeSharedTemplate	CalibCornerPatch.cc	/^void CalibCornerPatch::MakeSharedTemplate()$/
+CalibCornerPatch::MakeTemplateWithCurrentParams	CalibCornerPatch.cc	/^void CalibCornerPatch::MakeTemplateWithCurrentPara/
+CalibCornerPatch::Params	CalibCornerPatch.h	14
+CalibCornerPatch::Params::Params	CalibCornerPatch.cc	/^CalibCornerPatch::Params::Params()$/
+CalibCornerPatch::Params::dGain	CalibCornerPatch.h	21
+CalibCornerPatch::Params::dMean	CalibCornerPatch.h	20
+CalibCornerPatch::Params::m2Warp	CalibCornerPatch.cc	/^Matrix<2> CalibCornerPatch::Params::m2Warp()$/
+CalibCornerPatch::Params::v2Angles	CalibCornerPatch.h	19
+CalibCornerPatch::Params::v2Pos	CalibCornerPatch.h	18
+CalibCornerPatch::mParams	CalibCornerPatch.h	32
+CalibCornerPatch::mdLastError	CalibCornerPatch.h	40
+CalibCornerPatch::mimAngleJacs	CalibCornerPatch.h	35
+CalibCornerPatch::mimGradients	CalibCornerPatch.h	34
+CalibCornerPatch::mimSharedSourceTemplate	CalibCornerPatch.cc	16
+CalibCornerPatch::mimSharedSourceTemplate	CalibCornerPatch.h	38
+CalibCornerPatch::mimTemplate	CalibCornerPatch.h	33
+CalibGridCorner	CalibImage.h	14
+CalibGridCorner::Draw	CalibImage.cc	/^void CalibGridCorner::Draw()$/
+CalibGridCorner::ExpansionPotential	CalibImage.cc	/^double CalibGridCorner::ExpansionPotential()$/
+CalibGridCorner::GetSteps	CalibImage.cc	/^Matrix<2> CalibGridCorner::GetSteps(vector<CalibGr/
+CalibGridCorner::Params	CalibImage.h	22
+CalibGridCorner::aNeighborStates	CalibImage.h	24
+CalibGridCorner::irGridPos	CalibImage.h	23
+CalibGridCorner::mInheritedSteps	CalibImage.h	27
+CalibImage	CalibImage.h	34
+CalibImage::Draw3DGrid	CalibImage.cc	/^void CalibImage::Draw3DGrid(ATANCamera &Camera, bo/
+CalibImage::DrawImageGrid	CalibImage.cc	/^void CalibImage::DrawImageGrid()$/
+CalibImage::ErrorAndJacobians	CalibImage.h	44
+CalibImage::ErrorAndJacobians::Matrix	CalibImage.h	47
+CalibImage::ErrorAndJacobians::Matrix	CalibImage.h	48
+CalibImage::ErrorAndJacobians::m26PoseJac	CalibImage.h	47
+CalibImage::ErrorAndJacobians::m2NCameraJac	CalibImage.h	48
+CalibImage::ErrorAndJacobians::v2Error	CalibImage.h	46
+CalibImage::ExpandByAngle	CalibImage.cc	/^bool CalibImage::ExpandByAngle(int nSrc, int nDirn/
+CalibImage::ExpandByStep	CalibImage.cc	/^void CalibImage::ExpandByStep(int n)$/
+CalibImage::GuessInitialPose	CalibImage.cc	/^void CalibImage::GuessInitialPose(ATANCamera &Came/
+CalibImage::IR_from_dirn	CalibImage.cc	/^ImageRef CalibImage::IR_from_dirn(int nDirn)$/
+CalibImage::MakeFromImage	CalibImage.cc	/^bool CalibImage::MakeFromImage(Image<byte> &im)$/
+CalibImage::NextToExpand	CalibImage.cc	/^int CalibImage::NextToExpand()$/
+CalibImage::Project	CalibImage.cc	/^vector<CalibImage::ErrorAndJacobians> CalibImage::/
+CalibImage::mim	CalibImage.h	53
+CalibImage::mse3CamFromWorld	CalibImage.h	39
+CalibImage::mvCorners	CalibImage.h	56
+CalibImage::mvGridCorners	CalibImage.h	57
+Camera	Bundle.h	38
+CameraCalibrator	CameraCalibrator.h	12
+CameraCalibrator::CameraCalibrator	CameraCalibrator.cc	/^CameraCalibrator::CameraCalibrator()$/
+CameraCalibrator::GUICommandCallBack	CameraCalibrator.cc	/^void CameraCalibrator::GUICommandCallBack(void* pt/
+CameraCalibrator::GUICommandHandler	CameraCalibrator.cc	/^void CameraCalibrator::GUICommandHandler(string sC/
+CameraCalibrator::OptimizeOneStep	CameraCalibrator.cc	/^void CameraCalibrator::OptimizeOneStep()$/
+CameraCalibrator::Reset	CameraCalibrator.cc	/^void CameraCalibrator::Reset()$/
+CameraCalibrator::Run	CameraCalibrator.cc	/^void CameraCalibrator::Run()$/
+CameraCalibrator::mCamera	CameraCalibrator.h	26
+CameraCalibrator::mGLWindow	CameraCalibrator.h	25
+CameraCalibrator::mVideoSource	CameraCalibrator.h	23
+CameraCalibrator::mbDone	CameraCalibrator.h	27
+CameraCalibrator::mbGrabNextFrame	CameraCalibrator.h	32
+CameraCalibrator::mdMeanPixelError	CameraCalibrator.h	36
+CameraCalibrator::mgvnDisableDistortion	CameraCalibrator.h	35
+CameraCalibrator::mgvnOptimizing	CameraCalibrator.h	33
+CameraCalibrator::mgvnShowImage	CameraCalibrator.h	34
+CameraCalibrator::mvCalibImgs	CameraCalibrator.h	29
+Candidate	KeyFrame.h	36
+Candidate::dSTScore	KeyFrame.h	40
+Candidate::irLevelPos	KeyFrame.h	38
+Candidate::v2RootPos	KeyFrame.h	39
+Cauchy	MEstimator.h	26
+Cauchy::FindSigmaSquared	MEstimator.h	/^inline double Cauchy::FindSigmaSquared(std::vector/
+Cauchy::ObjectiveScore	MEstimator.h	/^inline double Cauchy::ObjectiveScore(double dError/
+Cauchy::SquareRootWeight	MEstimator.h	/^inline double Cauchy::SquareRootWeight(double dErr/
+Cauchy::Weight	MEstimator.h	/^inline double Cauchy::Weight(double dErrorSquared,/
+CheckFramebufferStatus	ARDriver.cc	/^static bool CheckFramebufferStatus()         $/
+EmptyTrash	Map.h	/^    void EmptyTrash();$/
+EyeGame	EyeGame.h	16
+EyeGame::DrawEye	EyeGame.cc	/^void EyeGame::DrawEye()$/
+EyeGame::DrawStuff	EyeGame.cc	/^void EyeGame::DrawStuff(Vector<3> v3CameraPos)$/
+EyeGame::EyeGame	EyeGame.cc	/^EyeGame::EyeGame()$/
+EyeGame::Init	EyeGame.cc	/^void EyeGame::Init()$/
+EyeGame::LookAt	EyeGame.cc	/^void EyeGame::LookAt(int nEye, Vector<3> v3, doubl/
+EyeGame::MakeShadowTex	EyeGame.cc	/^void EyeGame::MakeShadowTex()$/
+EyeGame::Reset	EyeGame.cc	/^void EyeGame::Reset()$/
+EyeGame::ase3WorldFromEye	EyeGame.h	35
+EyeGame::mbInitialised	EyeGame.h	26
+EyeGame::mdEyeRadius	EyeGame.h	33
+EyeGame::mdShadowHalfSize	EyeGame.h	34
+EyeGame::mnEyeDisplayList	EyeGame.h	31
+EyeGame::mnFrameCounter	EyeGame.h	36
+EyeGame::mnShadowTex	EyeGame.h	32
+FindPatch	MiniPatch.h	/^    bool FindPatch(CVD::ImageRef &irPos,          /
+FindShiTomasiScoreAtPoint	ShiTomasi.cc	/^double FindShiTomasiScoreAtPoint(BasicImage<byte> /
+FindSigmaSquared	MEstimator.h	/^    inline static double FindSigmaSquared(std::vec/
+FindSigmaSquared	MEstimator.h	/^    inline static double FindSigmaSquared(std::vec/
+FindSigmaSquared	MEstimator.h	/^    inline static double FindSigmaSquared(std::vec/
+FindSigmaSquared	MEstimator.h	/^    inline static double FindSigmaSquared(std::vec/
+Finder	TrackerData.h	23
+GLWindow2	GLWindow2.h	17
+GLWindow2::AddMenu	GLWindow2.cc	/^void GLWindow2::AddMenu(string sName, string sTitl/
+GLWindow2::DrawCaption	GLWindow2.cc	/^void GLWindow2::DrawCaption(string s)$/
+GLWindow2::DrawMenus	GLWindow2.cc	/^void GLWindow2::DrawMenus()$/
+GLWindow2::GLWindow2	GLWindow2.cc	/^GLWindow2::GLWindow2(ImageRef irSize, string sTitl/
+GLWindow2::GUICommandCallBack	GLWindow2.cc	/^void GLWindow2::GUICommandCallBack(void* ptr, stri/
+GLWindow2::GUICommandHandler	GLWindow2.cc	/^void GLWindow2::GUICommandHandler(string sCommand,/
+GLWindow2::GetMousePoseUpdate	GLWindow2.cc	/^pair<Vector<6>, Vector<6> > GLWindow2::GetMousePos/
+GLWindow2::HandlePendingEvents	GLWindow2.cc	/^void GLWindow2::HandlePendingEvents()$/
+GLWindow2::PrintString	GLWindow2.cc	/^void GLWindow2::PrintString(CVD::ImageRef irPos, s/
+GLWindow2::SetupUnitOrtho	GLWindow2.cc	/^void GLWindow2::SetupUnitOrtho()$/
+GLWindow2::SetupVideoOrtho	GLWindow2.cc	/^void GLWindow2::SetupVideoOrtho()$/
+GLWindow2::SetupVideoRasterPosAndZoom	GLWindow2.cc	/^void GLWindow2::SetupVideoRasterPosAndZoom()$/
+GLWindow2::SetupViewport	GLWindow2.cc	/^void GLWindow2::SetupViewport()$/
+GLWindow2::SetupWindowOrtho	GLWindow2.cc	/^void GLWindow2::SetupWindowOrtho()$/
+GLWindow2::mirLastMousePos	GLWindow2.h	59
+GLWindow2::mirVideoSize	GLWindow2.h	51
+GLWindow2::mvLeftPoseUpdate	GLWindow2.h	63
+GLWindow2::mvMCPoseUpdate	GLWindow2.h	62
+GLWindow2::mvpGLWindowMenus	GLWindow2.h	49
+GLWindow2::on_event	GLWindow2.cc	/^void GLWindow2::on_event(GLWindow& win, int event)/
+GLWindow2::on_key_down	GLWindow2.cc	/^void GLWindow2::on_key_down(GLWindow&, int k)$/
+GLWindow2::on_key_down	GLWindow2.cc	/^void GLWindow2::on_key_down(GLWindow&, int k)$/
+GLWindow2::on_mouse_down	GLWindow2.cc	/^void GLWindow2::on_mouse_down(GLWindow& win, CVD::/
+GLWindow2::on_mouse_move	GLWindow2.cc	/^void GLWindow2::on_mouse_move(GLWindow& win, CVD::/
+GLWindow2::std::pair	GLWindow2.h	41
+GLWindowMenu	GLWindowMenu.h	15
+GLWindowMenu::FillBox	GLWindowMenu.cc	/^void GLWindowMenu::FillBox(int l, int r, int t, in/
+GLWindowMenu::GLWindowMenu	GLWindowMenu.cc	/^GLWindowMenu::GLWindowMenu(string sName, string sT/
+GLWindowMenu::GUICommandCallBack	GLWindowMenu.cc	/^void GLWindowMenu::GUICommandCallBack(void *ptr, s/
+GLWindowMenu::GUICommandHandler	GLWindowMenu.cc	/^void GLWindowMenu::GUICommandHandler(string sComma/
+GLWindowMenu::HandleClick	GLWindowMenu.cc	/^bool GLWindowMenu::HandleClick(int nMouseButton, i/
+GLWindowMenu::LineBox	GLWindowMenu.cc	/^void GLWindowMenu::LineBox(int l, int r, int t, in/
+GLWindowMenu::MenuItem	GLWindowMenu.h	35
+GLWindowMenu::MenuItem::gvnIntValue	GLWindowMenu.h	41
+GLWindowMenu::MenuItem::max	GLWindowMenu.h	43
+GLWindowMenu::MenuItem::min	GLWindowMenu.h	42
+GLWindowMenu::MenuItem::sName	GLWindowMenu.h	38
+GLWindowMenu::MenuItem::sNextMenu	GLWindowMenu.h	40
+GLWindowMenu::MenuItem::sParam	GLWindowMenu.h	39
+GLWindowMenu::MenuItem::type	GLWindowMenu.h	37
+GLWindowMenu::MenuItemType	GLWindowMenu.h	33
+GLWindowMenu::MenuItemType::Button	GLWindowMenu.h	33
+GLWindowMenu::MenuItemType::Monitor	GLWindowMenu.h	33
+GLWindowMenu::MenuItemType::Slider	GLWindowMenu.h	33
+GLWindowMenu::MenuItemType::Toggle	GLWindowMenu.h	33
+GLWindowMenu::Render	GLWindowMenu.cc	/^void GLWindowMenu::Render(int nTop, int nHeight, i/
+GLWindowMenu::SubMenu	GLWindowMenu.h	46
+GLWindowMenu::SubMenu::mvItems	GLWindowMenu.h	48
+GLWindowMenu::mgvnEnabled	GLWindowMenu.h	62
+GLWindowMenu::mgvnMenuItemWidth	GLWindowMenu.h	63
+GLWindowMenu::mgvnMenuTextOffset	GLWindowMenu.h	64
+GLWindowMenu::mmSubMenus	GLWindowMenu.h	51
+GLWindowMenu::mnLeftMostCoord	GLWindowMenu.h	66
+GLWindowMenu::mnMenuHeight	GLWindowMenu.h	59
+GLWindowMenu::mnMenuTop	GLWindowMenu.h	58
+GLWindowMenu::mnTextOffset	GLWindowMenu.h	60
+GLWindowMenu::mnWidth	GLWindowMenu.h	57
+GLWindowMenu::msCurrentSubMenu	GLWindowMenu.h	52
+GLWindowMenu::msName	GLWindowMenu.h	53
+GLWindowMenu::msTitle	GLWindowMenu.h	54
+GLWindowMenu::std::map	GLWindowMenu.h	51
+GLWindowMenu::~GLWindowMenu	GLWindowMenu.cc	/^GLWindowMenu::~GLWindowMenu()$/
+GL_GLEXT_PROTOTYPES	ARDriver.cc	2
+GetDerivsUnsafe	TrackerData.h	/^    inline void GetDerivsUnsafe(ATANCamera &Cam)$/
+GuessInitialAngles	CalibImage.cc	/^Vector<2> GuessInitialAngles(Image<byte> &im, Imag/
+HomographyDecomposition	HomographyInit.h	32
+HomographyInit	HomographyInit.h	44
+HomographyInit::BestHomographyFromMatches_MLESAC	HomographyInit.cc	/^void HomographyInit::BestHomographyFromMatches_MLE/
+HomographyInit::ChooseBestDecomposition	HomographyInit.cc	/^void HomographyInit::ChooseBestDecomposition()$/
+HomographyInit::Compute	HomographyInit.cc	/^bool HomographyInit::Compute(vector<HomographyMatc/
+HomographyInit::DecomposeHomography	HomographyInit.cc	/^void HomographyInit::DecomposeHomography()$/
+HomographyInit::HomographyFromMatches	HomographyInit.cc	/^Matrix<3> HomographyInit::HomographyFromMatches(ve/
+HomographyInit::IsHomographyInlier	HomographyInit.cc	/^bool HomographyInit::IsHomographyInlier(Matrix<3> /
+HomographyInit::MLESACScore	HomographyInit.cc	/^double HomographyInit::MLESACScore(Matrix<3> m3Hom/
+HomographyInit::RefineHomographyWithInliers	HomographyInit.cc	/^void HomographyInit::RefineHomographyWithInliers()/
+HomographyInit::mdMaxPixelErrorSquared	HomographyInit.h	58
+HomographyInit::mm3BestHomography	HomographyInit.h	59
+HomographyInit::mvDecompositions	HomographyInit.h	62
+HomographyInit::mvHomographyInliers	HomographyInit.h	61
+HomographyInit::mvMatches	HomographyInit.h	60
+HomographyMatch	HomographyInit.h	23
+Huber	MEstimator.h	34
+Huber::FindSigmaSquared	MEstimator.h	/^inline double Huber::FindSigmaSquared(std::vector</
+Huber::ObjectiveScore	MEstimator.h	/^inline double Huber::ObjectiveScore(double dErrorS/
+Huber::SquareRootWeight	MEstimator.h	/^inline double Huber::SquareRootWeight(double dErro/
+Huber::Weight	MEstimator.h	/^inline double Huber::Weight(double dErrorSquared, /
+IsCorner	CalibImage.cc	/^inline bool IsCorner(Image<byte> &im, ImageRef ir,/
+IsGood	Map.h	/^    inline bool IsGood() {return bGood;}$/
+KeyFrame	KeyFrame.h	76
+KeyFrame::KeyFrame	KeyFrame.h	/^    inline KeyFrame()$/
+KeyFrame::MakeKeyFrame_Lite	KeyFrame.cc	/^void KeyFrame::MakeKeyFrame_Lite(BasicImage<byte> /
+KeyFrame::MakeKeyFrame_Rest	KeyFrame.cc	/^void KeyFrame::MakeKeyFrame_Rest()$/
+KeyFrame::aLevels	KeyFrame.h	84
+KeyFrame::bFixed	KeyFrame.h	83
+KeyFrame::dSceneDepthMean	KeyFrame.h	91
+KeyFrame::dSceneDepthSigma	KeyFrame.h	92
+KeyFrame::mMeasurements	KeyFrame.h	85
+KeyFrame::pSBI	KeyFrame.h	94
+KeyFrame::se3CfromW	KeyFrame.h	82
+KeyFrame::std::map	KeyFrame.h	85
+LEVELS	KeyFrame.h	33
+LeastSquares	MEstimator.h	42
+LeastSquares::FindSigmaSquared	MEstimator.h	/^inline double LeastSquares::FindSigmaSquared(std::/
+LeastSquares::ObjectiveScore	MEstimator.h	/^inline double LeastSquares::ObjectiveScore(double /
+LeastSquares::SquareRootWeight	MEstimator.h	/^inline double LeastSquares::SquareRootWeight(doubl/
+LeastSquares::Weight	MEstimator.h	/^inline double LeastSquares::Weight(double dErrorSq/
+Level	KeyFrame.h	54
+Level::Level	KeyFrame.h	/^    inline Level()$/
+Level::bImplaneCornersCached	KeyFrame.h	69
+Level::im	KeyFrame.h	61
+Level::operator=	KeyFrame.cc	/^Level& Level::operator=(const Level &rhs)$/
+Level::vCandidates	KeyFrame.h	67
+Level::vCornerRowLUT	KeyFrame.h	63
+Level::vCorners	KeyFrame.h	62
+Level::vImplaneCorners	KeyFrame.h	70
+Level::vMaxCorners	KeyFrame.h	64
+LevelHelpersFiller	KeyFrame.cc	117
+LevelHelpersFiller::LevelHelpersFiller	KeyFrame.cc	/^    LevelHelpersFiller()$/
+LevelNPos	LevelHelpers.h	/^inline double LevelNPos(double dRootPos, int nLeve/
+LevelNPos	LevelHelpers.h	/^inline Vector<2> LevelNPos(Vector<2> v2RootPos, in/
+LevelScale	LevelHelpers.h	/^inline int LevelScale(int nLevel)$/
+LevelZeroPos	LevelHelpers.h	/^inline double LevelZeroPos(double dLevelPos, int n/
+LevelZeroPos	LevelHelpers.h	/^inline Vector<2> LevelZeroPos(Vector<2> v2LevelPos/
+LevelZeroPos	LevelHelpers.h	/^inline Vector<2> LevelZeroPos(CVD::ImageRef irLeve/
+LinearUpdate	TrackerData.h	/^    inline void LinearUpdate(const Vector<6> &v6)$/
+M2Det	SmallMatrixOpts.h	/^inline double M2Det(Matrix<2> m)$/
+M2Inverse	SmallMatrixOpts.h	/^inline Matrix<2> M2Inverse(const Matrix<2> &m)$/
+M3Det	SmallMatrixOpts.h	/^inline double M3Det(Matrix<3> m )$/
+MCameraCalibrator.cc	CameraCalibrator.cc	/^int main()$/
+Map	Map.h	24
+Map	Map.h	/^    Map();$/
+Map::EmptyTrash	Map.cc	/^void Map::EmptyTrash()$/
+Map::Map	Map.cc	/^Map::Map()$/
+Map::MoveBadPointsToTrash	Map.cc	/^void Map::MoveBadPointsToTrash()$/
+Map::Reset	Map.cc	/^void Map::Reset()$/
+Map::bGood	Map.h	37
+Map::vpKeyFrames	Map.h	35
+Map::vpPoints	Map.h	33
+Map::vpPointsTrash	Map.h	34
+MapMaker	MapMaker.h	38
+MapMaker::AddKeyFrame	MapMaker.cc	/^void MapMaker::AddKeyFrame(KeyFrame &k)$/
+MapMaker::AddKeyFrameFromTopOfQueue	MapMaker.cc	/^void MapMaker::AddKeyFrameFromTopOfQueue()$/
+MapMaker::AddPointEpipolar	MapMaker.cc	/^bool MapMaker::AddPointEpipolar(KeyFrame &kSrc, $/
+MapMaker::AddSomeMapPoints	MapMaker.cc	/^void MapMaker::AddSomeMapPoints(int nLevel)$/
+MapMaker::ApplyGlobalScaleToMap	MapMaker.cc	/^void MapMaker::ApplyGlobalScaleToMap(double dScale/
+MapMaker::ApplyGlobalTransformationToMap	MapMaker.cc	/^void MapMaker::ApplyGlobalTransformationToMap(SE3</
+MapMaker::BundleAdjust	MapMaker.cc	/^void MapMaker::BundleAdjust(set<KeyFrame*> sAdjust/
+MapMaker::BundleAdjustAll	MapMaker.cc	/^void MapMaker::BundleAdjustAll()$/
+MapMaker::BundleAdjustRecent	MapMaker.cc	/^void MapMaker::BundleAdjustRecent()$/
+MapMaker::CalcPlaneAligner	MapMaker.cc	/^SE3<> MapMaker::CalcPlaneAligner()$/
+MapMaker::ClosestKeyFrame	MapMaker.cc	/^KeyFrame* MapMaker::ClosestKeyFrame(KeyFrame &k)$/
+MapMaker::Command	MapMaker.h	106
+MapMaker::Command::sCommand	MapMaker.h	106
+MapMaker::Command::sParams	MapMaker.h	106
+MapMaker::DistToNearestKeyFrame	MapMaker.cc	/^double MapMaker::DistToNearestKeyFrame(KeyFrame &k/
+MapMaker::GUICommandCallBack	MapMaker.cc	/^void MapMaker::GUICommandCallBack(void* ptr, strin/
+MapMaker::GUICommandHandler	MapMaker.cc	/^void MapMaker::GUICommandHandler(string sCommand, /
+MapMaker::HandleBadPoints	MapMaker.cc	/^void MapMaker::HandleBadPoints()$/
+MapMaker::InitFromStereo	MapMaker.cc	/^bool MapMaker::InitFromStereo(KeyFrame &kF,$/
+MapMaker::IsDistanceToNearestKeyFrameExcessive	MapMaker.cc	/^bool MapMaker::IsDistanceToNearestKeyFrameExcessiv/
+MapMaker::KeyFrameLinearDist	MapMaker.cc	/^double MapMaker::KeyFrameLinearDist(KeyFrame &k1, /
+MapMaker::MapMaker	MapMaker.cc	/^MapMaker::MapMaker(Map& m, const ATANCamera &cam)$/
+MapMaker::NClosestKeyFrames	MapMaker.cc	/^vector<KeyFrame*> MapMaker::NClosestKeyFrames(KeyF/
+MapMaker::NeedNewKeyFrame	MapMaker.cc	/^bool MapMaker::NeedNewKeyFrame(KeyFrame &kCurrent)/
+MapMaker::QueueSize	MapMaker.h	/^    int  QueueSize() { return mvpKeyFrameQueue.siz/
+MapMaker::ReFindFromFailureQueue	MapMaker.cc	/^void MapMaker::ReFindFromFailureQueue()$/
+MapMaker::ReFindInSingleKeyFrame	MapMaker.cc	/^int MapMaker::ReFindInSingleKeyFrame(KeyFrame &k)$/
+MapMaker::ReFindNewlyMade	MapMaker.cc	/^void MapMaker::ReFindNewlyMade()$/
+MapMaker::ReFind_Common	MapMaker.cc	/^bool MapMaker::ReFind_Common(KeyFrame &k, MapPoint/
+MapMaker::RefreshSceneDepth	MapMaker.cc	/^void MapMaker::RefreshSceneDepth(KeyFrame *pKF)$/
+MapMaker::ReprojectPoint	MapMaker.cc	/^Vector<3> MapMaker::ReprojectPoint(SE3<> se3AfromB/
+MapMaker::RequestReset	MapMaker.cc	/^void MapMaker::RequestReset()$/
+MapMaker::Reset	MapMaker.cc	/^void MapMaker::Reset()$/
+MapMaker::ResetDone	MapMaker.cc	/^bool MapMaker::ResetDone()$/
+MapMaker::ThinCandidates	MapMaker.cc	/^void MapMaker::ThinCandidates(KeyFrame &k, int nLe/
+MapMaker::mCamera	MapMaker.h	64
+MapMaker::mMap	MapMaker.h	63
+MapMaker::mbBundleAbortRequested	MapMaker.h	127
+MapMaker::mbBundleConverged_Full	MapMaker.h	121
+MapMaker::mbBundleConverged_Recent	MapMaker.h	122
+MapMaker::mbBundleRunning	MapMaker.h	128
+MapMaker::mbBundleRunningIsRecent	MapMaker.h	129
+MapMaker::mbResetDone	MapMaker.h	126
+MapMaker::mbResetRequested	MapMaker.h	125
+MapMaker::mdWiggleScale	MapMaker.h	115
+MapMaker::mdWiggleScaleDepthNormalized	MapMaker.h	118
+MapMaker::mgvdWiggleScale	MapMaker.h	117
+MapMaker::mqNewQueue	MapMaker.h	113
+MapMaker::mvFailureQueue	MapMaker.h	112
+MapMaker::mvQueuedCommands	MapMaker.h	107
+MapMaker::mvpKeyFrameQueue	MapMaker.h	111
+MapMaker::run	MapMaker.cc	/^void MapMaker::run()$/
+MapMaker::std::vector	MapMaker.h	112
+MapMaker::~MapMaker	MapMaker.cc	/^MapMaker::~MapMaker()$/
+MapMakerData	MapMaker.h	29
+MapMakerData::GoodMeasCount	MapMaker.h	/^    inline int GoodMeasCount()$/
+MapMakerData::sMeasurementKFs	MapMaker.h	31
+MapMakerData::sNeverRetryKFs	MapMaker.h	32
+MapPoint	KeyFrame.h	97
+MapPoint	MapPoint.h	27
+MapPoint::MapPoint	MapPoint.h	/^    inline MapPoint()$/
+MapPoint::RefreshPixelVectors	MapPoint.cc	/^void MapPoint::RefreshPixelVectors()$/
+MapPoint::bBad	MapPoint.h	43
+MapPoint::dCreationTime	MapPoint.h	74
+MapPoint::irCenter	MapPoint.h	48
+MapPoint::nMEstimatorInlierCount	MapPoint.h	71
+MapPoint::nMEstimatorOutlierCount	MapPoint.h	70
+MapPoint::nSourceLevel	MapPoint.h	47
+MapPoint::pMMData	MapPoint.h	64
+MapPoint::pPatchSourceKF	MapPoint.h	46
+MapPoint::pTData	MapPoint.h	67
+MapPoint::v3Center_NC	MapPoint.h	54
+MapPoint::v3Normal_NC	MapPoint.h	57
+MapPoint::v3OneDownFromCenter_NC	MapPoint.h	55
+MapPoint::v3OneRightFromCenter_NC	MapPoint.h	56
+MapPoint::v3PixelDown_W	MapPoint.h	59
+MapPoint::v3PixelRight_W	MapPoint.h	60
+MapPoint::v3WorldPos	MapPoint.h	41
+MapViewer	MapViewer.h	23
+MapViewer::DrawCamera	MapViewer.cc	/^void MapViewer::DrawCamera(SE3<> se3CfromW, bool b/
+MapViewer::DrawGrid	MapViewer.cc	/^void MapViewer::DrawGrid()$/
+MapViewer::DrawMap	MapViewer.cc	/^void MapViewer::DrawMap(SE3<> se3CamFromWorld)$/
+MapViewer::DrawMapDots	MapViewer.cc	/^void MapViewer::DrawMapDots()$/
+MapViewer::GetMessageForUser	MapViewer.cc	/^string MapViewer::GetMessageForUser()$/
+MapViewer::MapViewer	MapViewer.cc	/^MapViewer::MapViewer(Map &map, GLWindow2 &glw):$/
+MapViewer::SetupFrustum	MapViewer.cc	/^void MapViewer::SetupFrustum()$/
+MapViewer::SetupModelView	MapViewer.cc	/^void MapViewer::SetupModelView(SE3<> se3WorldFromC/
+MapViewer::mGLWindow	MapViewer.h	32
+MapViewer::mMap	MapViewer.h	31
+MapViewer::mMessageForUser	MapViewer.h	43
+MapViewer::mse3ViewerFromWorld	MapViewer.h	41
+MapViewer::mv3MassCenter	MapViewer.h	40
+Meas	Bundle.h	74
+Meas::Matrix	Bundle.h	90
+Meas::Matrix	Bundle.h	91
+Meas::Matrix	Bundle.h	92
+Meas::Matrix	Bundle.h	93
+Meas::Meas	Bundle.h	/^    inline Meas()$/
+Meas::bBad	Bundle.h	86
+Meas::c	Bundle.h	81
+Meas::dErrorSquared	Bundle.h	98
+Meas::dSqrtInvNoise	Bundle.h	94
+Meas::m23B	Bundle.h	91
+Meas::m26A	Bundle.h	90
+Meas::m2CamDerivs	Bundle.h	99
+Meas::m63W	Bundle.h	92
+Meas::m63Y	Bundle.h	93
+Meas::operator<	Bundle.h	/^    inline bool operator<(const Meas &rhs) const$/
+Meas::p	Bundle.h	80
+Meas::v2Epsilon	Bundle.h	89
+Meas::v2Found	Bundle.h	88
+Meas::v3Cam	Bundle.h	97
+Measurement	KeyFrame.h	44
+Measurement::SRC_EPIPOLAR	KeyFrame.h	49
+Measurement::SRC_REFIND	KeyFrame.h	49
+Measurement::SRC_ROOT	KeyFrame.h	49
+Measurement::SRC_TRACKER	KeyFrame.h	49
+Measurement::SRC_TRAIL	KeyFrame.h	49
+Measurement::Source	KeyFrame.h	49
+Measurement::bSubPix	KeyFrame.h	47
+Measurement::nLevel	KeyFrame.h	46
+Measurement::v2RootPos	KeyFrame.h	48
+MiniPatch	MiniPatch.h	21
+MiniPatch::FindPatch	MiniPatch.cc	/^bool MiniPatch::FindPatch(CVD::ImageRef &irPos, $/
+MiniPatch::SSDAtPoint	MiniPatch.cc	/^inline int MiniPatch::SSDAtPoint(CVD::BasicImage<C/
+MiniPatch::SampleFromImage	MiniPatch.cc	/^void MiniPatch::SampleFromImage(ImageRef irPos, Ba/
+MiniPatch::mimOrigPatch	MiniPatch.h	34
+MiniPatch::mnHalfPatchSize	MiniPatch.cc	94
+MiniPatch::mnMaxSSD	MiniPatch.cc	96
+MiniPatch::mnRange	MiniPatch.cc	95
+Mmain.cc	main.cc	/^int main()$/
+MoveBadPointsToTrash	Map.h	/^    void MoveBadPointsToTrash();$/
+NUMTRACKERCAMPARAMETERS	ATANCamera.h	54
+N_FAILED	CalibImage.h	12
+N_NOT_TRIED	CalibImage.h	11
+NeighborState	CalibImage.h	16
+NeighborState	CalibImage.h	/^        NeighborState() {val = N_NOT_TRIED;}$/
+ObjectiveScore	MEstimator.h	/^    inline static double ObjectiveScore(double dEr/
+ObjectiveScore	MEstimator.h	/^    inline static double ObjectiveScore(double dEr/
+ObjectiveScore	MEstimator.h	/^    inline static double ObjectiveScore(double dEr/
+ObjectiveScore	MEstimator.h	/^    inline static double ObjectiveScore(double dEr/
+OffDiagScriptEntry	Bundle.h	49
+PatchFinder	PatchFinder.h	48
+PatchFinder::CVD::Image	PatchFinder.h	116
+PatchFinder::CalcSearchLevelAndWarpMatrix	PatchFinder.cc	/^int PatchFinder::CalcSearchLevelAndWarpMatrix(MapP/
+PatchFinder::FindPatchCoarse	PatchFinder.cc	/^bool PatchFinder::FindPatchCoarse(ImageRef irPos, /
+PatchFinder::GetCoarsePos	PatchFinder.h	/^    inline CVD::ImageRef GetCoarsePos() { return C/
+PatchFinder::GetCoarsePosAsVector	PatchFinder.h	/^    inline Vector<2> GetCoarsePosAsVector() { retu/
+PatchFinder::GetCov	PatchFinder.h	/^    inline Matrix<2> GetCov()$/
+PatchFinder::GetLevel	PatchFinder.h	/^    inline int GetLevel() { return mnSearchLevel; /
+PatchFinder::GetLevelScale	PatchFinder.h	/^    inline int GetLevelScale() { return LevelScale/
+PatchFinder::GetSubPixPos	PatchFinder.h	/^    inline Vector<2> GetSubPixPos()  { return mv2S/
+PatchFinder::IterateSubPix	PatchFinder.cc	/^double PatchFinder::IterateSubPix(KeyFrame &kf)$/
+PatchFinder::IterateSubPixToConvergence	PatchFinder.cc	/^bool PatchFinder::IterateSubPixToConvergence(KeyFr/
+PatchFinder::MakeSubPixTemplate	PatchFinder.cc	/^void PatchFinder::MakeSubPixTemplate()$/
+PatchFinder::MakeTemplateCoarse	PatchFinder.cc	/^void PatchFinder::MakeTemplateCoarse(MapPoint &p,$/
+PatchFinder::MakeTemplateCoarseCont	PatchFinder.cc	/^void PatchFinder::MakeTemplateCoarseCont(MapPoint /
+PatchFinder::MakeTemplateCoarseNoWarp	PatchFinder.cc	/^void PatchFinder::MakeTemplateCoarseNoWarp(KeyFram/
+PatchFinder::MakeTemplateCoarseNoWarp	PatchFinder.cc	/^void PatchFinder::MakeTemplateCoarseNoWarp(MapPoin/
+PatchFinder::MakeTemplateSums	PatchFinder.cc	/^inline void PatchFinder::MakeTemplateSums()$/
+PatchFinder::PatchFinder	PatchFinder.cc	/^PatchFinder::PatchFinder(int nPatchSize)$/
+PatchFinder::SetSubPixPos	PatchFinder.h	/^    void SetSubPixPos(Vector<2> v2)  { mv2SubPixPo/
+PatchFinder::TemplateBad	PatchFinder.h	/^    inline bool TemplateBad()      { return mbTemp/
+PatchFinder::ZMSSDAtPoint	PatchFinder.cc	/^int PatchFinder::ZMSSDAtPoint(CVD::BasicImage<CVD:/
+PatchFinder::mbFound	PatchFinder.h	127
+PatchFinder::mbTemplateBad	PatchFinder.h	128
+PatchFinder::mdMeanDiff	PatchFinder.h	122
+PatchFinder::mimJacs	PatchFinder.h	116
+PatchFinder::mimTemplate	PatchFinder.h	115
+PatchFinder::mirCenter	PatchFinder.h	126
+PatchFinder::mirPredictedPos	PatchFinder.h	124
+PatchFinder::mm2LastWarpMatrix	PatchFinder.h	132
+PatchFinder::mm2WarpInverse	PatchFinder.h	118
+PatchFinder::mm3HInv	PatchFinder.h	120
+PatchFinder::mnMaxSSD	PatchFinder.h	104
+PatchFinder::mnPatchSize	PatchFinder.h	108
+PatchFinder::mnSearchLevel	PatchFinder.h	119
+PatchFinder::mnTemplateSum	PatchFinder.h	111
+PatchFinder::mnTemplateSumSq	PatchFinder.h	112
+PatchFinder::mpLastTemplateMapPoint	PatchFinder.h	131
+PatchFinder::mv2CoarsePos	PatchFinder.h	125
+PatchFinder::mv2SubPixPos	PatchFinder.h	121
+Point	Bundle.h	56
+Point	Bundle.h	/^    inline Point()$/
+Point	TrackerData.h	22
+Point::sCameras	Bundle.h	68
+Point::vOffDiagonalScript	Bundle.h	69
+Project	TrackerData.h	/^    inline void Project(const SE3<> &se3CFromW, AT/
+ProjectAndDerivs	TrackerData.h	/^    inline void ProjectAndDerivs(SE3<> &se3, ATANC/
+Relocaliser	Relocaliser.h	20
+Relocaliser::AttemptRecovery	Relocaliser.cc	/^bool Relocaliser::AttemptRecovery(KeyFrame &kCurre/
+Relocaliser::BestPose	Relocaliser.cc	/^SE3<> Relocaliser::BestPose()$/
+Relocaliser::Relocaliser	Relocaliser.cc	/^Relocaliser::Relocaliser(Map &map, ATANCamera &cam/
+Relocaliser::ScoreKFs	Relocaliser.cc	/^void Relocaliser::ScoreKFs(KeyFrame &kCurrent)$/
+Relocaliser::mCamera	Relocaliser.h	30
+Relocaliser::mMap	Relocaliser.h	29
+Relocaliser::mdBestScore	Relocaliser.h	32
+Relocaliser::mnBest	Relocaliser.h	31
+Relocaliser::mse2	Relocaliser.h	33
+Relocaliser::mse3Best	Relocaliser.h	34
+Reset	Map.h	/^    void Reset();$/
+SSDAtPoint	MiniPatch.h	/^    inline int SSDAtPoint(CVD::BasicImage<CVD::byt/
+SampleFromImage	MiniPatch.h	/^    void SampleFromImage(CVD::ImageRef irPos, CVD:/
+SampsonusError	HomographyInit.cc	/^static double SampsonusError(Vector<2> &v2Dash, co/
+SmallBlurryImage	SmallBlurryImage.h	16
+SmallBlurryImage::IteratePosRelToTarget	SmallBlurryImage.cc	/^pair<SE2<>,double> SmallBlurryImage::IteratePosRel/
+SmallBlurryImage::MakeFromKF	SmallBlurryImage.cc	/^void SmallBlurryImage::MakeFromKF(KeyFrame &kf, do/
+SmallBlurryImage::MakeJacs	SmallBlurryImage.cc	/^void SmallBlurryImage::MakeJacs()$/
+SmallBlurryImage::SE3fromSE2	SmallBlurryImage.cc	/^SE3<> SmallBlurryImage::SE3fromSE2(SE2<> se2, ATAN/
+SmallBlurryImage::SmallBlurryImage	SmallBlurryImage.cc	/^SmallBlurryImage::SmallBlurryImage(KeyFrame &kf, d/
+SmallBlurryImage::SmallBlurryImage	SmallBlurryImage.cc	/^SmallBlurryImage::SmallBlurryImage()$/
+SmallBlurryImage::ZMSSD	SmallBlurryImage.cc	/^double SmallBlurryImage::ZMSSD(SmallBlurryImage &o/
+SmallBlurryImage::mbMadeJacs	SmallBlurryImage.h	31
+SmallBlurryImage::mimImageJacs	SmallBlurryImage.h	30
+SmallBlurryImage::mimSmall	SmallBlurryImage.h	28
+SmallBlurryImage::mimTemplate	SmallBlurryImage.h	29
+SmallBlurryImage::mirSize	SmallBlurryImage.h	32
+SmallBlurryImage::std::pair	SmallBlurryImage.h	24
+SquareRootWeight	MEstimator.h	/^    inline static double SquareRootWeight(double d/
+SquareRootWeight	MEstimator.h	/^    inline static double SquareRootWeight(double d/
+SquareRootWeight	MEstimator.h	/^    inline static double SquareRootWeight(double d/
+SquareRootWeight	MEstimator.h	/^    inline static double SquareRootWeight(double d/
+SumXMM_16	PatchFinder.cc	/^inline int SumXMM_16(__m128i &target)$/
+SumXMM_32	PatchFinder.cc	/^inline int SumXMM_32(__m128i &target)$/
+System	System.h	27
+System::GUICommandCallBack	System.cc	/^void System::GUICommandCallBack(void *ptr, string /
+System::Run	System.cc	/^void System::Run()$/
+System::System	System.cc	/^System::System()$/
+System::mGLWindow	System.h	35
+System::mVideoSource	System.h	34
+System::mbDone	System.h	46
+System::mimFrameBW	System.h	37
+System::mimFrameRGB	System.h	36
+System::mpARDriver	System.h	43
+System::mpCamera	System.h	42
+System::mpMap	System.h	39
+System::mpMapMaker	System.h	40
+System::mpMapViewer	System.h	44
+System::mpTracker	System.h	41
+TooN	ATANCamera.h	49
+TooN	Bundle.h	27
+TooN	CalibCornerPatch.h	7
+TooN	EyeGame.h	13
+TooN	HomographyInit.h	17
+TooN	KeyFrame.h	22
+TooN	LevelHelpers.h	12
+TooN	MapPoint.h	18
+TooN	MapViewer.h	16
+TooN	MEstimator.h	13
+TooN	MiniPatch.h	18
+TooN	PatchFinder.h	41
+Tracker	Tracker.h	42
+Tracker::AddNewKeyFrame	Tracker.cc	/^void Tracker::AddNewKeyFrame()$/
+Tracker::ApplyMotionModel	Tracker.cc	/^void Tracker::ApplyMotionModel()$/
+Tracker::AssessTrackingQuality	Tracker.cc	/^void Tracker::AssessTrackingQuality()$/
+Tracker::AttemptRecovery	Tracker.cc	/^bool Tracker::AttemptRecovery()$/
+Tracker::BAD	Tracker.h	108
+Tracker::CalcPoseUpdate	Tracker.cc	/^Vector<6> Tracker::CalcPoseUpdate(vector<TrackerDa/
+Tracker::CalcSBIRotation	Tracker.cc	/^void Tracker::CalcSBIRotation()$/
+Tracker::Command	Tracker.h	129
+Tracker::Command::sCommand	Tracker.h	129
+Tracker::Command::sParams	Tracker.h	129
+Tracker::DODGY	Tracker.h	108
+Tracker::GOOD	Tracker.h	108
+Tracker::GUICommandCallBack	Tracker.cc	/^void Tracker::GUICommandCallBack(void* ptr, string/
+Tracker::GUICommandHandler	Tracker.cc	/^void Tracker::GUICommandHandler(string sCommand, s/
+Tracker::GetCurrentPose	Tracker.h	/^    inline SE3<> GetCurrentPose() { return mse3Cam/
+Tracker::GetMessageForUser	Tracker.cc	/^string Tracker::GetMessageForUser()$/
+Tracker::RenderGrid	Tracker.cc	/^void Tracker::RenderGrid()$/
+Tracker::Reset	Tracker.cc	/^void Tracker::Reset()$/
+Tracker::SearchForPoints	Tracker.cc	/^int Tracker::SearchForPoints(vector<TrackerData*> /
+Tracker::TRAIL_TRACKING_COMPLETE	Tracker.h	73
+Tracker::TRAIL_TRACKING_NOT_STARTED	Tracker.h	71
+Tracker::TRAIL_TRACKING_STARTED	Tracker.h	72
+Tracker::TrackForInitialMap	Tracker.cc	/^void Tracker::TrackForInitialMap()$/
+Tracker::TrackFrame	Tracker.cc	/^void Tracker::TrackFrame(Image<byte> &imFrame, boo/
+Tracker::TrackMap	Tracker.cc	/^void Tracker::TrackMap()$/
+Tracker::Tracker	Tracker.cc	/^Tracker::Tracker(ImageRef irVideoSize, const ATANC/
+Tracker::TrailTracking_Advance	Tracker.cc	/^int Tracker::TrailTracking_Advance()$/
+Tracker::TrailTracking_Start	Tracker.cc	/^void Tracker::TrailTracking_Start()$/
+Tracker::UpdateMotionModel	Tracker.cc	/^void Tracker::UpdateMotionModel()$/
+Tracker::mCamera	Tracker.h	61
+Tracker::mCurrentKF	Tracker.h	56
+Tracker::mFirstKF	Tracker.h	77
+Tracker::mMap	Tracker.h	59
+Tracker::mMapMaker	Tracker.h	60
+Tracker::mMessageForUser	Tracker.h	124
+Tracker::mPreviousFrameKF	Tracker.h	78
+Tracker::mRelocaliser	Tracker.h	62
+Tracker::mTrackingQuality	Tracker.h	108
+Tracker::manMeasAttempted	Tracker.h	106
+Tracker::manMeasFound	Tracker.h	107
+Tracker::mbDidCoarse	Tracker.h	96
+Tracker::mbDraw	Tracker.h	98
+Tracker::mbJustRecoveredSoUseCoarse	Tracker.h	113
+Tracker::mbUseSBIInit	Tracker.h	120
+Tracker::mbUserPressedSpacebar	Tracker.h	123
+Tracker::mdMSDScaledVelocityMagnitude	Tracker.h	95
+Tracker::mdVelocityMagnitude	Tracker.h	94
+Tracker::mirSize	Tracker.h	64
+Tracker::mlTrails	Tracker.h	76
+Tracker::mnFrame	Tracker.h	101
+Tracker::mnInitialStage	Tracker.h	73
+Tracker::mnLastKeyFrameDropped	Tracker.h	102
+Tracker::mnLostFrames	Tracker.h	109
+Tracker::mpSBILastFrame	Tracker.h	116
+Tracker::mpSBIThisFrame	Tracker.h	117
+Tracker::mse3CamFromWorld	Tracker.h	91
+Tracker::mse3StartPos	Tracker.h	92
+Tracker::mv6CameraVelocity	Tracker.h	93
+Tracker::mv6SBIRot	Tracker.h	119
+Tracker::mvQueuedCommands	Tracker.h	130
+TrackerData	TrackerData.h	16
+TrackerData	TrackerData.h	/^    TrackerData(MapPoint *pMapPoint)$/
+TrackerData::irImageSize	Tracker.cc	1014
+TrackerData::irImageSize	TrackerData.h	106
+Trail	Tracker.h	35
+Trail::irCurrentPos	Tracker.h	38
+Trail::irInitialPos	Tracker.h	39
+Trail::mPatch	Tracker.h	37
+Tukey	MEstimator.h	18
+Tukey::FindSigmaSquared	MEstimator.h	/^inline double Tukey::FindSigmaSquared(std::vector</
+Tukey::ObjectiveScore	MEstimator.h	/^inline double Tukey::ObjectiveScore(double dErrorS/
+Tukey::SquareRootWeight	MEstimator.h	/^inline double Tukey::SquareRootWeight(double dErro/
+Tukey::Weight	MEstimator.h	/^inline double Tukey::Weight(double dErrorSquared, /
+VideoSource	VideoSource.h	21
+VideoSource::GetAndFillFrameBWandRGB	VideoSource_Linux_DV.cc	/^void VideoSource::GetAndFillFrameBWandRGB(Image<by/
+VideoSource::GetAndFillFrameBWandRGB	VideoSource_Linux_file.cc	/^void VideoSource::GetAndFillFrameBWandRGB(Image<by/
+VideoSource::GetAndFillFrameBWandRGB	VideoSource_Linux_V4L.cc	/^void VideoSource::GetAndFillFrameBWandRGB(Image<by/
+VideoSource::Size	VideoSource_Linux_DV.cc	/^ImageRef VideoSource::Size()$/
+VideoSource::Size	VideoSource_Linux_file.cc	/^ImageRef VideoSource::Size()$/
+VideoSource::Size	VideoSource_Linux_V4L.cc	/^ImageRef VideoSource::Size()$/
+VideoSource::VideoSource	VideoSource_Linux_DV.cc	/^VideoSource::VideoSource()$/
+VideoSource::VideoSource	VideoSource_Linux_file.cc	/^VideoSource::VideoSource()$/
+VideoSource::VideoSource	VideoSource_Linux_V4L.cc	/^VideoSource::VideoSource()$/
+VideoSource::mirSize	VideoSource.h	30
+VideoSource::mptr	VideoSource.h	29
+WIN32_LEAN_AND_MEAN	MapMaker.cc	21
+WIN32_LEAN_AND_MEAN	OpenGL.h	16
+Weight	MEstimator.h	/^    inline static double Weight(double dErrorSquar/
+Weight	MEstimator.h	/^    inline static double Weight(double dErrorSquar/
+Weight	MEstimator.h	/^    inline static double Weight(double dErrorSquar/
+Weight	MEstimator.h	/^    inline static double Weight(double dErrorSquar/
+__AR_Driver_H	ARDriver.h	12
+__ATAN_CAMERA_H	ATANCamera.h	45
+__BUNDLE_H	Bundle.h	4
+__CALIB_CORNER_PATCH_H	CalibCornerPatch.h	5
+__CALIB_IMAGE_H	CalibImage.h	5
+__CAMERACALIBRATOR_H	CameraCalibrator.h	5
+__EYEGAME_H	EyeGame.h	11
+__GL_WINDOW_2_H	GLWindow2.h	4
+__GL_WINDOW_MENU_H	GLWindowMenu.h	5
+__HOMOGRAPHY_INIT_H	HomographyInit.h	14
+__KEYFRAME_H	KeyFrame.h	19
+__LEVEL_HELPERS_H	LevelHelpers.h	10
+__MAPMAKER_H	MapMaker.h	15
+__MAP_H	Map.h	16
+__MAP_POINT_H	MapPoint.h	15
+__MAP_VIEWER_H	MapViewer.h	12
+__MESTIMATOR_H	MEstimator.h	11
+__MINI_PATCH_H	MiniPatch.h	12
+__OPENGL_INCLUDES_H	OpenGL.h	3
+__PATCHFINDER_H	PatchFinder.h	38
+__RELOCALISER_H	Relocaliser.h	12
+__SHI_TOMASI__H	ShiTomasi.h	3
+__SMALLBLURRYIMAGE_H	SmallBlurryImage.h	8
+__SMALL_MATRIX_OPTS	SmallMatrixOpts.h	7
+__SYSTEM_H	System.h	12
+__TRACKERDATA_H	TrackerData.h	4
+__TRACKER_H	Tracker.h	22
+bDidSubPix	TrackerData.h	36
+bFixed	Bundle.h	40
+bFound	TrackerData.h	35
+bInImage	TrackerData.h	30
+bPotentiallyVisible	TrackerData.h	31
+bSearched	TrackerData.h	34
+cout	Bundle.cc	17
+d	HomographyInit.h	36
+dSqrtInvNoise	TrackerData.h	38
+foo	KeyFrame.cc	131
+gavLevelColors	KeyFrame.cc	114
+isnan	Bundle.cc	/^inline bool isnan(double d) {return !(d==d);}$/
+j	Bundle.h	51
+k	Bundle.h	52
+m26Jacobian	TrackerData.h	43
+m2CamDerivs	TrackerData.h	29
+m2PixelProjectionJac	HomographyInit.h	28
+m3Rp	HomographyInit.h	35
+m3V	Bundle.h	62
+m3VStarInv	Bundle.h	64
+m6U	Bundle.h	43
+meas_it	KeyFrame.h	97
+mnHalfPatchSize	MiniPatch.h	31
+mnMaxSSD	MiniPatch.h	33
+mnRange	MiniPatch.h	32
+nMeasurements	Bundle.h	66
+nOutliers	Bundle.h	67
+nScore	HomographyInit.h	41
+nSearchLevel	TrackerData.h	33
+nStartRow	Bundle.h	45
+operator<	HomographyInit.cc	/^bool operator<(const HomographyDecomposition lhs, /
+se3CfW	Bundle.h	41
+se3CfWNew	Bundle.h	42
+se3SecondFromFirst	HomographyInit.h	40
+std	ARDriver.h	22
+v2CamPlaneFirst	HomographyInit.h	26
+v2CamPlaneSecond	HomographyInit.h	27
+v2Error_CovScaled	TrackerData.h	42
+v2Found	TrackerData.h	37
+v2ImPlane	TrackerData.h	27
+v2Image	TrackerData.h	28
+v3Cam	TrackerData.h	26
+v3EpsilonB	Bundle.h	63
+v3Pos	Bundle.h	60
+v3PosNew	Bundle.h	61
+v3Tp	HomographyInit.h	34
+v3n	HomographyInit.h	37
+v6EpsilonA	Bundle.h	44
+val	CalibImage.h	19
